@@ -1,5 +1,5 @@
 from scipy.optimize import linprog
-
+#anything before undoing this is my hw!!
 #maximizing profit as matrix +: minimize & -: maximize
 #i dont know if im smart enough to be here, why is my obj func longer thna the matrix?
 c=[-1.0775, -1.19, -1.153]
@@ -13,9 +13,6 @@ A= [[0.5, 0.25, 0],
 b= [400000, 200000, 300000]
 
 #constraint eq matrices
-Aeq=[[1, 1, ]
-
-]
 
 res =linprog(c, A_ub=A, b_ub=b, method='highs')
 
